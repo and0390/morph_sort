@@ -50,7 +50,7 @@ namespace morph
             (*this)(std::begin(container),std::end(container),
                     std::move(compare),std::move(projection));
         }
-        
+
     private:
         template<typename ForwardIter,
                  typename Compare,
@@ -112,19 +112,9 @@ namespace morph
             std::iter_swap(pos, last);
 
             return pos;
-        }
-        
-        
+        }  
     };
-
 }
-
-
-
-
-
-
-
 
 
 
