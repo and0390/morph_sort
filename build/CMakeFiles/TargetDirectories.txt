@@ -1,0 +1,5 @@
+/home/andreas/Documents/cpp/morph_sort/build/CMakeFiles/edit_cache.dir
+/home/andreas/Documents/cpp/morph_sort/build/CMakeFiles/rebuild_cache.dir
+/home/andreas/Documents/cpp/morph_sort/build/src/debug/CMakeFiles/test_debug.dir
+/home/andreas/Documents/cpp/morph_sort/build/src/debug/CMakeFiles/edit_cache.dir
+/home/andreas/Documents/cpp/morph_sort/build/src/debug/CMakeFiles/rebuild_cache.dir

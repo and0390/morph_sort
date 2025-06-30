@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/andreas/Documents/cpp/morph_sort/build",
+  "command": "/usr/bin/g++ -I/home/andreas/Documents/cpp/morph_sort/include -g -std=gnu++17 -o src/debug/CMakeFiles/test_debug.dir/bubble_sort.cpp.o -c /home/andreas/Documents/cpp/morph_sort/src/debug/bubble_sort.cpp",
+  "file": "/home/andreas/Documents/cpp/morph_sort/src/debug/bubble_sort.cpp",
+  "output": "src/debug/CMakeFiles/test_debug.dir/bubble_sort.cpp.o"
+}
+]
