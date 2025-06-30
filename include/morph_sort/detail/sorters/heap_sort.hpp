@@ -56,38 +56,36 @@ namespace morph
                 }
             }
         }
-
     private:
-
         template<typename RandomAccessIter,
                  typename Compare,
                  typename Projection>
-		inline constexpr 
+        inline constexpr 
         auto heap_sort_impl(RandomAccessIter* begin,
                             RandomAccessIter* end, 
                             Compare compare,
                             Projection projection) const
             -> void
-		{   
+        {   
             RandomAccessIter* const pBegin = begin + 1;
 
-			make_heap.make_heap_impl(
+            make_heap.make_heap_impl(
                 begin, 
                 end, 
                 compare, 
                 projection
             );
 
-			for (;pBegin != end; --end)
-			{
-				pop_heap.pop_heap_impl(
+            for (;pBegin != end; --end)
+            {
+                pop_heap.pop_heap_impl(
                     begin, 
                     end, 
                     compare, 
                     projection
                 );
-			}
-		}
+            }
+        }
     };
 }
 
