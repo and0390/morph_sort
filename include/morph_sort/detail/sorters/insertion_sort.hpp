@@ -42,7 +42,8 @@ namespace morph
                 std::move(compare),
                 detail::fn_projection(std::move(projection))
             );
-        }       
+        }
+               
     private:
         template<typename RandomAccessIter,
                  typename Compare,

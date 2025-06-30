@@ -62,7 +62,6 @@ namespace morph
         }
         
     private:
-
         template<typename RandomAccessIter,
                  typename Compare,
                  typename Projection>

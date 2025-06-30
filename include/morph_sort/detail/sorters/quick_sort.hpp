@@ -18,15 +18,15 @@ namespace morph
     {
     public:
         template<typename ForwardIter, 
-				 typename Compare = std::less<void>,
-				 typename Projection = morph::identity>
-		constexpr inline 
+                 typename Compare = std::less<void>,
+                 typename Projection = morph::identity>
+        constexpr inline 
         auto operator()(ForwardIter begin, 
                         ForwardIter end, 
                         Compare compare = {}, 
                         Projection projection = {}) const 
             -> void
-		{
+        {
             if(begin != end)
             {
                 quick_sort_impl_rec(
@@ -36,20 +36,21 @@ namespace morph
                     detail::fn_projection(projection)
                 );
             }
-		}
+        }
 
-		template<typename Container, 
-				 typename Compare = std::less<void>,
-				 typename Projection = morph::identity>
-		constexpr inline 
+        template<typename Container, 
+                 typename Compare = std::less<void>,
+                 typename Projection = morph::identity>
+        constexpr inline 
         auto operator()(Container& container,
                         Compare compare = {},
                         Projection projection = {}) const 
             -> void
-		{
-			(*this)(std::begin(container),std::end(container),
+        {
+            (*this)(std::begin(container),std::end(container),
                     std::move(compare),std::move(projection));
-		}
+        }
+        
     private:
         template<typename ForwardIter,
                  typename Compare,

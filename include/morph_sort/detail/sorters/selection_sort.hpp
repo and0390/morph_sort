@@ -16,48 +16,47 @@ namespace morph
     {
     public:
         template<typename ForwardIter, 
-				 typename Compare = std::less<void>,
-				 typename Projection = morph::identity>
-		constexpr inline 
+                 typename Compare = std::less<void>,
+                 typename Projection = morph::identity>
+        constexpr inline 
         auto operator()(ForwardIter begin, 
                         ForwardIter end, 
                         Compare compare = {}, 
                         Projection projection = {}) const 
             -> void
-		{
+        {
             selection_sort_impl(
                 std::move(begin),
                 std::move(end),
                 std::move(compare),
                 detail::fn_projection(std::move(projection))
             );
-		}
+        }
 
-		template<typename Container, 
-				 typename Compare = std::less<void>,
-				 typename Projection = morph::identity>
-		constexpr inline 
+        template<typename Container, 
+                 typename Compare = std::less<void>,
+                 typename Projection = morph::identity>
+        constexpr inline 
         auto operator()(Container& container,
                         Compare compare = {},
                         Projection projection = {}) const 
             -> void
-		{
-			(*this)(std::begin(container),std::end(container),
+        {
+            (*this)(std::begin(container),std::end(container),
                     std::move(compare),std::move(projection));
-		}
-
+        }
+        
     private:
-
         template<typename ForwardIter,
                  typename Compare,
                  typename Projection>
-		constexpr 
+        constexpr 
         auto selection_sort_impl(ForwardIter begin, 
                                  ForwardIter end, 
                                  Compare compare,
                                  Projection projection) const
             -> void
-		{
+        {
             if(begin != end)
             {
                 for (; begin != end; ++begin)
@@ -76,7 +75,7 @@ namespace morph
                     std::iter_swap(begin, most);
                 }
             }
-		}
+        }
     };
 }
 
