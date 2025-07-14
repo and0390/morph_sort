@@ -149,7 +149,7 @@ namespace morph
 			);
 		}
     };
-	
+
 	inline constexpr heap_fn make_heap;
 
 	struct pop_heap_fn

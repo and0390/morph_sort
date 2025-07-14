@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(morph_sort LANGUAGES CXX)
 
-add_subdirectory(src/debug)
+add_subdirectory(tests)
+add_subdirectory(benchmarks)
