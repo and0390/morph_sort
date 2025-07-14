@@ -1,8 +1,8 @@
-# morph_sort
+# Morph Sort
 
 a simple sorting library for C++
 
-##preview
+## Preview
 ```cpp
 #include <vector>
 #include <morph_sort/morph_sort.hpp>
