@@ -47,3 +47,29 @@ int main()
     return 0;
 }
 ```
+## Features
+Morph Sort library supports various basic sorting algorithms
+
+- Bubble sort
+- Heap sort
+- Insertion sort
+- Quick sort
+- Merge sort
+- Selection sort
+
+predefined member types that might be helpful
+
+<some_sort_fn>::sort_type
+```cpp
+    auto sort_func = morph::make_sort<morph::adapter::merge_sort>();
+    static_assert(std::is_same_v<decltype(sort_func)::sort_type, morph::adapter::merge_sort>);
+```
+and
+
+<some_sort_fn>::is_stable
+```cpp
+    auto sort_func = morph::make_sort<morph::adapter::merge_sort>();
+    static_assert(decltype(sort_func)::is_stable::value);
+```
+
+
