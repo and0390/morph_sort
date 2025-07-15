@@ -75,50 +75,50 @@ and
 ### Bubble sort
 ```cpp
 //Overload for iterators
-void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 ### Heap sort
 ```cpp
 //Overload for iterators
-void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 ### Insertion sort
 ```cpp
 //Overload for Iterators
-void operator()(BidirectionalIter begin, BidirectionalIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(BidirectionalIter begin, BidirectionalIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 ### Merge Sort
 ```cpp
 //Overload for Iterators
-void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 ### Quick Sort
 ```cpp
 //Overload for iterators
-void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 ### Selection Sort
 ```cpp
 //Overload for iterators
-void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const;
 
 //Overload for Containers
-void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const;
 ```
 
 
