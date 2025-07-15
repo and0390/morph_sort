@@ -71,5 +71,10 @@ and
     auto sort_func = morph::make_sort<morph::adapter::merge_sort>();
     static_assert(decltype(sort_func)::is_stable::value);
 ```
+### Signatures
+#### Bubble sort
+```cpp
+void bubble_sort(ForwardIter begin, ForwardIter end, Compare compare, Projection projection)
+void heap_sort_impl(RandomAccessIter begin, RandomAccessIter end, Compare compare, Projection projection)
 
 
