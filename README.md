@@ -71,10 +71,60 @@ and
     auto sort_func = morph::make_sort<morph::adapter::merge_sort>();
     static_assert(decltype(sort_func)::is_stable::value);
 ```
-### Signatures
-#### Bubble sort
+## Callable Interface
+### Bubble sort
 ```cpp
-void bubble_sort(ForwardIter begin, ForwardIter end, Compare compare, Projection projection)
-void heap_sort_impl(RandomAccessIter begin, RandomAccessIter end, Compare compare, Projection projection)
+//Overload for iterators
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+### Heap sort
+```cpp
+//Overload for iterators
+void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+### Insertion sort
+```cpp
+//Overload for Iterators
+void operator()(BidirectionalIter begin, BidirectionalIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+### Merge Sort
+```cpp
+//Overload for Iterators
+void operator()(RandomAccessIter begin, RandomAccessIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+### Quick Sort
+```cpp
+//Overload for iterators
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+### Selection Sort
+```cpp
+//Overload for iterators
+void operator()(ForwardIter begin, ForwardIter end, Compare compare = {}, Projection projection = {}) const
+
+//Overload for Containers
+void operator()(Container& container, Compare compare = {}, Projection projection = {}) const
+```
+
+
+
+
+
+
 
 
